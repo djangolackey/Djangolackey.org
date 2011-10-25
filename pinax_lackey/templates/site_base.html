@@ -1,0 +1,169 @@
+{% load analytics %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{% block head_title %}Djangolackey{% endblock %}</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/base_custom.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/syntax.css" type="text/css" media="screen" />
+    <link rel="alternate" type="application/atom+xml" href="{% url blog_feed "technical" %}" title="technical blog feed"/>
+    <link rel="alternate" type="application/atom+xml" href="{% url blog_feed "business" %}" title="business blog feed"/>
+    <link rel="alternate" type="application/atom+xml" href="{% url blog_feed_combined %}" title="combined blog feed"/>
+
+  <script>
+    function draw_vertical_line() {
+        var a_canvas = document.getElementById("verticalLine");
+        var context = a_canvas.getContext("2d");
+        context.strokeStyle = "#326342"
+        context.moveTo(50, 0);
+        context.lineTo(200, 1000);
+        context.lineTo(275, 1000);
+        context.lineTo(125, 0);
+        context.closePath();
+        context.stroke();
+        context.fillStyle = "#326342";
+        context.fill();
+      };
+    window.onload = function(){
+        draw_vertical_line();
+    };
+  </script>
+
+  </head>
+  <body id="{% block body_id %}default{% endblock %}">
+
+    <div style="position:relative;margin:0 auto;width:900px;">
+
+    <div class="main">
+        <div class="page">
+        <p class="ieonly">Really, Your still using Internet Explorer? <a href="http://www.mozilla.org">Get a real browser</a> and comeback later. Or keep looking, you're used to things being ugly anyway.</p>
+        {% block rail %}
+        <div class="leftRail">
+            <section class="topContent">
+                        <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+                        <script>
+                        new TWTR.Widget({
+                          version: 2,
+                          type: 'profile',
+                          rpp: 2,
+                          interval: 2000,
+                          width: 171,
+                          height: 600,
+                          theme: {
+                            shell: {
+                              background: 'transparent',
+                              color: '#555555'
+                            },
+                            tweets: {
+                              background: '#ffffff',
+                              color: '#555555',
+                              links: '#0c0d0c'
+                            }
+                          },
+                          features: {
+                            scrollbar: false,
+                            loop: false,
+                            live: false,
+                            hashtags: true,
+                            timestamp: true,
+                            avatars: true,
+                            behavior: 'default'
+                          }
+                        }).render().setUser('djangolackey').start();
+                        </script>
+
+<!--                    <h3>Stuff</h3>
+                    <ul>
+                        <li><strong>Job: </strong><a href="http://www.arkansasonline.com">Web Developer</a></li>
+                        <li><a href="http://twitter.com/djangolackey">Twitter: DjangoLackey</a></li>
+                        <li><strong>Status:</strong> <a href="http://www.jlindseyfamily.net">Married</a></li>
+                        <li><strong>Like:</strong> To solve problems</li>
+                        <li><strong>Hate:</strong> That not everyone wants to help</li>
+                        <li><strong>Goal:</strong> Give newspaper web developers a resource for sharing ideas and code</li>
+                        <li><strong>Email:</strong> jeff at djangolacky.org</li>
+                        <li><strong>Experience:</strong> 10 years in the newspaper business as a page designer, two years as an Online News Editor and 1 year as a newspaper web developer.
+                        <li><strong>Wish:</strong> I had time to maintain this site</li>
+                        <li><strong>Phone:</strong> <a href="http://www.palm.com/us/products/phones/pre-family.html">Palm Pre (first gen)</a></li>
+                        <li><strong>Hope:</strong> That the newspaper industry can survive it's attempt at assisted suicide</li>
+                        <li><strong>Computer:</strong> <a href="http://www.apple.com/macbookpro/">MacBook Pro</a></li>
+                        <li><strong>Kids:</strong> Two <a href="http://www.darwinawards.com/">(No darwin award for me)</a></li>
+                        <li><strong>TV:</strong> <a href="http://www.cbs.com/primetime/ncis/">Crime shows</a>, when there's time</li>
+                        <li><strong>Distraction:</strong> Backyard Gardening</li>
+                        <li><strong>Django:</strong> Two years with no Dev. background</li>
+                        <li><strong>Favorite Sites:</strong>
+                            <ul>
+                                <li><a href="http://www.precentral.net/">PreCentral</a></li>
+                                <li><a href="http://www.engadget.com">Engadget</a></li>
+                            </ul>
+                        </li>
+                    </ul> -->
+            </section>
+        </div>
+
+        <canvas id="verticalLine">
+            <div id="verticalDivider">
+                <img src="{{ STATIC_URL }}static_images/dividerline.png" alt="" />
+                <img src="{{ STATIC_URL }}static_images/dividerline.png" alt="" />
+                <img src="{{ STATIC_URL }}static_images/dividerline.png" alt="" />
+                <img src="{{ STATIC_URL }}static_images/dividerline.png" alt="" />
+            </div>
+        </canvas>
+        {% endblock %}
+        <div class="mainContent">
+        {% block title %}
+            <header class="header">
+                <div class="logo">
+                    <div class="logoChatter">
+                       <div class="logo">
+                           <a href="/"><img src="{{ STATIC_URL }}static_images/lackeyLogo.png" alt="DjangoLackey.org" /></a>
+                       </div>
+                     <div class="clr"></div>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+            </header>
+        {% endblock %}
+        {% block content_wrapper %}
+            <section class="content">
+                {% block content %}{% endblock %}
+                <div class="clr"></div>
+            </section>
+        {% endblock content_wrapper %}
+             <div class="clr"></div>
+        </div>
+        {% block footer %}
+        <footer class="bottomContent">
+            <div class="blantantPromotion">
+               <a href="http://www.djangoproject.com/"><img title="Powered by Django." alt="Powered by Django." src="http://media.djangoproject.com/img/badges/djangopowered126x54.gif" /></a>
+           </div>
+
+            <div class="footerSpace">
+                <nav class="footerSpaceContent">
+                    <h3>Find me on </h3>
+                    <ul>
+                        <li><strong>Yahoo!</strong> -- djangolackey at yahoo.com</li>
+                        <li><strong>Google</strong> -- <a href="http://www.google.com/profiles/djangolackey.">djangolackey at gmail.com</a></li>
+                        <li><strong>LinkedIn</strong>-- <a href="http://www.linkedin.com/pub/jeff-lindsey/22/179/a18">Profile</a></li>
+                        <li><strong>Twitter</strong> --  <a href="http://www.twitter.com/djangolackey">@djangolackey</a></li>
+                        <li><strong>AOL</strong> -- djangolackey at aol.com</li>
+                    </ul>
+                </nav>
+                <div class="clr"></div>
+            </div>
+            <div class="clr"></div>
+        </footer>
+        {% endblock footer %}
+
+        <div class="clr"></div>
+      </div>
+    </div>
+
+
+    {% block extra_body_base %}
+    {% if ga %}{% ga %}{% endif %}
+    {% block extra_body %}{% endblock %}
+    {% endblock %}
+    </div>
+  </body>
+</html>

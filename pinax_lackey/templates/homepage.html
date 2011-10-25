@@ -1,0 +1,46 @@
+{% extends "site_base.html" %}
+
+{% load webdesign %}
+{% load biblion_tags %}
+
+{% block body_id %}homepage{% endblock %}
+
+{% block content %}
+                {% latest_section_post "readmetxt" as latest_feature_post %}
+                <section class="topContent">
+                    <article class="insetWide">
+                        <hgroup>
+                        <h1>Readme.txt</h1>
+                        <h5>Hardly ever read, but often useful information</h5>
+                        </hgroup>
+                        <hr />
+                        <hgroup>
+                        <h2>{{ latest_feature_post.title }}</h2>
+                        </hgroup>
+                        <time datetime="{{ latest_feature_post.published|date:"HTML5_DATE_FORMAT" }}" pubdate>{{ latest_feature_post.published|date }}</time>
+                        {{ latest_feature_post.content_html|safe }}
+                        <p><a href="{{ latest_feature_post.get_absolute_url }}">>> More</a></p>
+                    </article>
+                    <div class="clr"></div>
+                </section>
+                {% latest_section_post "codewords" as latest_technical_post %}
+                <section class="bottomContent">
+                    <article class="insetWide">
+                        <hgroup>
+                        <h2>Code Words</h2>
+                        <h5>What we really want instead of all the blather</h5>
+                        </hgroup>
+                        <hr />
+                        <hgroup>
+                        <h2>{{ latest_technical_post.title }}</h2>
+                        </hgroup>
+                        <time datetime="{{ latest_feature_post.published|date:"HTML5_DATE_FORMAT" }}" pubdate>{{ latest_technical_post.published|date }}</time>
+                        {{ latest_technical_post.content_html|safe }}
+                        <p><a href="{{ latest_technical_post.get_absolute_url }}">>> More</a></p>
+                    </article>
+                    <div class="clr"></div>
+                </section>
+{% endblock %}
+
+{% block extra_body %}
+{% endblock %}

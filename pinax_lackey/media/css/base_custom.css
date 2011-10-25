@@ -1,0 +1,255 @@
+ /*
+    Theme Name: Lindsey homepage
+    Theme URI: http://www.jlindseyfamily.net/
+    Description: Primary CSS. A mobile version will also be available
+    Version: 1.0
+    Author: Jeff Lindsey
+  */
+
+.ieonly {display:none;}
+* html .ieonly {display:inline;font-size:smaller;}
+
+div, table {
+    margin:0;
+    padding:0;
+}
+
+p,li,h1,h2,h3,h4,h5 {font-size: 10pt;}
+
+p {margin:0 0 6px 0;padding:0;line-height: 16pt;color:#555555;font-size:.9em;}
+
+ul {margin:0;padding:0;list-style-position:inside;margin-left:12px;color:#555555;}
+
+li {font-size: 0.8em; line-height: 1.4em; list-style: none outside none; margin: 6px 0 0; padding: 0;}
+
+h1 {font-size:2em;margin:0 0 9px 0;padding:0;color:#092E20;}
+
+h2 {font-size:1.4em;margin:0 0 9px 0;padding:0;color:#092E20;}
+
+h3 {font-size:1.2em;margin:0 0 9px 0;padding:0;color:#092E20;}
+
+h4 {font-size:1.0em;margin:0 0 9px 0;padding:0;}
+
+h5 {font-size:.9em;margin:0 0 9px 0;padding:0;}
+
+img {border:none;display:block;margin:0 auto;}
+
+a {color:#326342;text-decoration:underline;}
+
+a img {border:none;}
+
+.inline img {border:none;display:inline;margin:0 3px;}
+
+body {
+	/*background:#326342 url("../static_images/puzzlebkgd.gif");*/
+    background: url("../static_images/bottomfade.jpg") repeat-x scroll left bottom #FFFFFF;
+	font-size:.9em;
+	font-family:Verdana, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+}
+
+.clr {
+    clear:both;
+}
+
+/* Base skeleton styles */
+#verticalLine {position:absolute;top:0px;left:220px;width:100px;height:100%;}
+
+#verticalDivider {position:absolute;top:0;left:175px;width:140px;}
+
+.main {
+    width:900px;
+    position:relative;
+    /*border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;*/
+    margin: 0 auto;
+    padding: 40px 20px 0;}
+
+.page {
+    /* background:url("../static_images/dividerline.png") repeat-y scroll 171px 0 transparent;*/
+}
+
+.header {
+    background: url("../static_images/puzzlepiece1.png") no-repeat scroll 480px 0 transparent;
+    border: medium none;
+    padding: 20px 0 0;
+    width: 100%;
+}
+
+.mainContent {
+    border: medium none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 590px;
+    display:table-cell;
+}
+
+.insetNarrow {
+    margin-right:10px;
+    margin-left:10px;
+    padding:20px 0;
+}
+
+.insetWide {
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.puzzleDivider .insetWide {
+    padding-top:0;
+    margin-left:20px;
+    padding-bottom:0;
+}
+
+
+pre.code {
+   margin:20px 30px;
+   color:#092E20;
+   border-top:1px solid #dddddd;
+   border-bottom:1px solid #dddddd;
+   padding:15px 0;
+}
+
+div.mainContent .topContent{
+    background-color:#ffffff;
+    clear:left;
+}
+div.mainContent .puzzleDivider {
+/*    background:transparent url("../static_images/puzzlepiece4rev.png") no-repeat 0 0; */
+    display:block;
+    clear:left;
+    min-height: 160px;
+    padding: 0 0 0 27px;
+}
+
+div.mainContent .bottomContent {
+    background-color:#ffffff;
+    clear:left;
+}
+
+.leftRail {
+    float:left;
+    padding:0;
+    width:171px;
+    margin:0 139px 0 0;
+    display:table-cell;
+}
+
+div.leftRail .topContent {
+    clear:left;
+    width:100%;
+}
+
+/*
+div.leftRail .puzzleDivider {
+    background:transparent url("../static_images/puzzlepiece1rev.png") no-repeat 0 0;
+    height:171px;
+    display:block;
+    width:172px;
+    clear:left;
+}
+*/
+.bottomContent{
+    clear:left;
+    width: 100%;
+    padding:40px 0 20px 0;
+}
+
+.content {
+    padding: 0 60px 0 0;
+    position:relative;
+}
+
+.footerSpace {
+/*    height:230px;
+    background:transparent url('../static_images/puzzleedge.png') no-repeat 0 0; */
+    float:left;
+    width:500px;
+}
+
+.footerSpace li {
+    list-style: none outside none;
+    line-height: .8em;
+}
+
+.footerSpaceContent {
+    padding: 0 40px;
+    width: 100%;
+    float:left;
+}
+
+.bottomRtCrn {
+    position:absolute;
+    bottom:0px;
+    right:0px;
+/*    background:transparent url('../static_images/bottomrightcrn.png') no-repeat 0 0; */
+    height:15px;
+    width:15px;
+}
+.bottomLftCrn {
+    position:absolute;
+    bottom:0px;
+    left:0px;
+/*    background:transparent url('../static_images/bottomleftcrn.png') no-repeat 0 0; */
+    height:15px;
+    width:15px;
+}
+.topRtCrn {
+    position:absolute;
+    top:0px;
+    right:0px;
+/*    background:transparent url('../static_images/toprightcrn.png') no-repeat 0 0; */
+    height:15px;
+    width:15px;
+}
+.topLftCrn {
+    position:absolute;
+    top:0px;
+    left:0px;
+/*    background:transparent url('../static_images/topleftcrn.png') no-repeat 0 0; */
+    height:15px;
+    width:15px;
+}
+
+
+/* Object styles */
+.logo {
+}
+
+.logo img {
+    margin:0 0;
+    width:500px;
+}
+
+.logoChatter {
+    height:121px;
+}
+
+.logoChatter h3 {
+    font-size:1.1em;
+    margin-top:10px;
+}
+
+.topSectionContent h3 {
+    color:#326342;
+    font-weight:normal;
+    font-size:.95em;
+}
+
+.blantantPromotion {
+    float: left;
+    margin-right: 125px;
+    text-align: left;
+    width: 172px;
+}
+
+.blantantPromotion img {
+    margin:3px auto;
+}
+
+.blantantPromotion p {
+    margin-top:6px;
+    text-align:center;
+}

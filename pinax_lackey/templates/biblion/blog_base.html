@@ -1,0 +1,19 @@
+{% extends "site_base.html" %}
+
+{% load webdesign %}
+
+{% block body_id %}blog{% endblock %}
+{% block header %}{% endblock %}
+
+{% block content %}
+    <div class="grouping clear">
+        <div class="primary">
+            {% block primary %}{% endblock %}
+        </div>
+
+        <div class="secondary">
+            {% block secondary %}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

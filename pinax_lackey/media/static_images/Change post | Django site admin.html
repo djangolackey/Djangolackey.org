@@ -1,0 +1,1096 @@
+
+  Django administration
+
+Welcome, *djangolackey*. Documentation </admin/doc/> / Change password
+</admin/password_change/> / Log out </admin/logout/>
+Home <../../../> › Biblion <../../> › Posts <../> › CSV
+
+
+  Change post
+
+    * History <history/>
+    * View on site <../../../r/9/2/>
+
+Section:
+Title:
+Slug:
+Author: Add Another </admin/auth/user/add/>
+Teaser: I've fallen in love with a Python module that I never new
+existed: csv
+Content: <p>I've fallen in love with a Python module that I never new
+existed: csv</p> <p> from my_app.models import * import csv def
+parse_data(location, limit=None): """Parse a csv and save the contents
+in a model""" webregs = open(location, 'r') reader =
+csv.DictReader(webregs) count = 0 for row in reader: if not limit or
+limit < count: data = DataModel() data.email = unicode(row.get('EMAIL',
+''), errors='replace') data.first_name = unicode(row.get('FIRST_NAME',
+''), errors='replace') data.last_name = unicode(row.get('LAST_NAME',
+''), errors='replace') data.save() count += 1 webregs.close() print
+count </p> <p>Ain't Python Grand</p>
+Publish
+
+Checking this will publish this articles on the site
+
+
+    Images
+
+Image path 	Delete?
+		
+		
+		
+		
+Add another Image <javascript:void(0)>
+
+Delete <delete/>
+
+
+    * Hide » <#>
+    * Versions
+      Django 1.2.1 <#>
+    * Time
+      CPU: 103.64ms (104.37ms) <#>
+    * Settings <#>
+    * HTTP Headers <#>
+    * Request Vars <#>
+    * SQL
+      6 queries in 2.86ms <#>
+    * Templates <#>
+    * Signals <#>
+    * Logging
+      0 messages <#>
+
+« <#>
+Close
+
+
+      Versions
+
+Package 	Version
+Debug toolbar 	0.8.3
+Django 	1.2.1
+
+Close
+
+
+      Resource Usage
+
+Resource 	Value
+User CPU time 	93.536 msec
+System CPU time 	10.100 msec
+Total CPU time 	103.636 msec
+Elapsed time 	104.368 msec
+Context switches 	0 voluntary, 16 involuntary
+
+Close
+
+
+      Settings from |djangolackey.settings|
+
+Setting 	Value
+ABSOLUTE_URL_OVERRIDES 	|{}|
+ADMINS 	|[('Jeff Lindsey', 'jeff@djangolackey.org')]|
+ADMIN_FOR 	|()|
+ADMIN_MEDIA_PREFIX 	|'/site_media/static/admin/'|
+ALLOWED_INCLUDE_ROOTS 	|()|
+APPEND_SLASH 	|True|
+AUTHENTICATION_BACKENDS 	|('django.contrib.auth.backends.ModelBackend',)|
+BANNED_IPS 	|()|
+BIBLION_SECTIONS 	|[('code words', u'Code Words'), ('business',
+u'Business'), ('readme.txt', u'readme.txt')]|
+CACHE_BACKEND 	|'locmem://'|
+CACHE_MIDDLEWARE_KEY_PREFIX 	|''|
+CACHE_MIDDLEWARE_SECONDS 	|600|
+COMMENTS_ALLOW_PROFANITIES 	|False|
+COMMENTS_BANNED_USERS_GROUP 	|None|
+COMMENTS_FIRST_FEW 	|0|
+COMMENTS_MODERATORS_GROUP 	|None|
+COMMENTS_SKETCHY_USERS_GROUP 	|None|
+CSRF_COOKIE_DOMAIN 	|None|
+CSRF_COOKIE_NAME 	|'csrftoken'|
+CSRF_FAILURE_VIEW 	|'django.views.csrf.csrf_failure'|
+DATABASES 	|{'default': {'ENGINE': 'django.db.backends.sqlite3', 'HOST':
+'', 'NAME': 'dev.db', 'OPTIONS': {}, 'PASSWORD': '********************',
+'PORT': '', 'TEST_CHARSET': None, 'TEST_COLLATION': None, 'TEST_MIRROR':
+None, 'TEST_NAME': None, 'TIME_ZONE': 'US/Eastern', 'USER': ''}}|
+DATABASE_ENGINE 	|''|
+DATABASE_HOST 	|''|
+DATABASE_NAME 	|''|
+DATABASE_OPTIONS 	|{}|
+DATABASE_PASSWORD 	|'********************'|
+DATABASE_PORT 	|''|
+DATABASE_ROUTERS 	|[]|
+DATABASE_USER 	|''|
+DATETIME_FORMAT 	|'N j, Y, P'|
+DATETIME_INPUT_FORMATS 	|('%Y-%m-%d %H:%M:%S', '%Y-%m-%d %H:%M',
+'%Y-%m-%d', '%m/%d/%Y %H:%M:%S', '%m/%d/%Y %H:%M', '%m/%d/%Y', '%m/%d/%y
+%H:%M:%S', '%m/%d/%y %H:%M', '%m/%d/%y')|
+DATE_FORMAT 	|'N j, Y'|
+DATE_INPUT_FORMATS 	|('%Y-%m-%d', '%m/%d/%Y', '%m/%d/%y', '%b %d %Y',
+'%b %d, %Y', '%d %b %Y', '%d %b, %Y', '%B %d %Y', '%B %d, %Y', '%d %B
+%Y', '%d %B, %Y')|
+DEBUG 	|True|
+DEBUG_PROPAGATE_EXCEPTIONS 	|False|
+DEBUG_TOOLBAR_CONFIG 	|{'INTERCEPT_REDIRECTS': False}|
+DECIMAL_SEPARATOR 	|'.'|
+DEFAULT_CHARSET 	|'utf-8'|
+DEFAULT_CONTENT_TYPE 	|'text/html'|
+DEFAULT_FILE_STORAGE 	|'django.core.files.storage.FileSystemStorage'|
+DEFAULT_FROM_EMAIL 	|'webmaster@localhost'|
+DEFAULT_INDEX_TABLESPACE 	|''|
+DEFAULT_TABLESPACE 	|''|
+DISALLOWED_USER_AGENTS 	|()|
+EMAIL_BACKEND 	|'django.core.mail.backends.smtp.EmailBackend'|
+EMAIL_HOST 	|'localhost'|
+EMAIL_HOST_PASSWORD 	|'********************'|
+EMAIL_HOST_USER 	|''|
+EMAIL_PORT 	|25|
+EMAIL_SUBJECT_PREFIX 	|'[Django] '|
+EMAIL_USE_TLS 	|False|
+FILE_CHARSET 	|'utf-8'|
+FILE_UPLOAD_HANDLERS
+|('django.core.files.uploadhandler.MemoryFileUploadHandler',
+'django.core.files.uploadhandler.TemporaryFileUploadHandler')|
+FILE_UPLOAD_MAX_MEMORY_SIZE 	|2621440|
+FILE_UPLOAD_PERMISSIONS 	|None|
+FILE_UPLOAD_TEMP_DIR 	|None|
+FIRST_DAY_OF_WEEK 	|0|
+FIXTURE_DIRS
+|['/Users/webdesk/Sites/djangolackeyorg/djangolackey/fixtures']|
+FORCE_SCRIPT_NAME 	|None|
+FORMAT_MODULE_PATH 	|None|
+IGNORABLE_404_ENDS 	|('mail.pl', 'mailform.pl', 'mail.cgi',
+'mailform.cgi', 'favicon.ico', '.php')|
+IGNORABLE_404_STARTS 	|('/cgi-bin/', '/_vti_bin', '/_vti_inf')|
+INSTALLED_APPS 	|['django.contrib.admindocs', 'django.contrib.admin',
+'django.contrib.auth', 'django.contrib.contenttypes',
+'django.contrib.sessions', 'django.contrib.sites',
+'django.contrib.messages', 'django.contrib.humanize',
+'django.contrib.webdesign', 'pinax.templatetags', 'staticfiles',
+'debug_toolbar', 'biblion', 'pinax.apps.analytics']|
+INTERNAL_IPS 	|['127.0.0.1']|
+LANGUAGES 	|(('ar', 'Arabic'), ('bg', 'Bulgarian'), ('bn', 'Bengali'),
+('bs', 'Bosnian'), ('ca', 'Catalan'), ('cs', 'Czech'), ('cy', 'Welsh'),
+('da', 'Danish'), ('de', 'German'), ('el', 'Greek'), ('en', 'English'),
+('en-gb', 'British English'), ('es', 'Spanish'), ('es-ar', 'Argentinean
+Spanish'), ('et', 'Estonian'), ('eu', 'Basque'), ('fa', 'Persian'),
+('fi', 'Finnish'), ('fr', 'French'), ('fy-nl', 'Frisian'), ('ga',
+'Irish'), ('gl', 'Galician'), ('he', 'Hebrew'), ('hi', 'Hindi'), ('hr',
+'Croatian'), ('hu', 'Hungarian'), ('id', 'Indonesian'), ('is',
+'Icelandic'), ('it', 'Italian'), ('ja', 'Japanese'), ('ka', 'Georgian'),
+('km', 'Khmer'), ('kn', 'Kannada'), ('ko', 'Korean'), ('lt',
+'Lithuanian'), ('lv', 'Latvian'), ('mk', 'Macedonian'), ('mn',
+'Mongolian'), ('nl', 'Dutch'), ('no', 'Norwegian'), ('nb', 'Norwegian
+Bokmal'), ('nn', 'Norwegian Nynorsk'), ('pl', 'Polish'), ('pt',
+'Portuguese'), ('pt-br', 'Brazilian Portuguese'), ('ro', 'Romanian'),
+('ru', 'Russian'), ('sk', 'Slovak'), ('sl', 'Slovenian'), ('sq',
+'Albanian'), ('sr', 'Serbian'), ('sr-latn', 'Serbian Latin'), ('sv',
+'Swedish'), ('ta', 'Tamil'), ('te', 'Telugu'), ('th', 'Thai'), ('tr',
+'Turkish'), ('uk', 'Ukrainian'), ('vi', 'Vietnamese'), ('zh-cn',
+'Simplified Chinese'), ('zh-tw', 'Traditional Chinese'))|
+LANGUAGES_BIDI 	|('he', 'ar', 'fa')|
+LANGUAGE_CODE 	|'en-us'|
+LANGUAGE_COOKIE_NAME 	|'django_language'|
+LOCALE_PATHS 	|()|
+LOGIN_REDIRECT_URL 	|'/accounts/profile/'|
+LOGIN_URL 	|'/accounts/login/'|
+LOGOUT_URL 	|'/accounts/logout/'|
+MANAGERS 	|[('Jeff Lindsey', 'jeff@djangolackey.org')]|
+MEDIA_ROOT
+|'/Users/webdesk/Sites/djangolackeyorg/djangolackey/site_media/media'|
+MEDIA_URL 	|'/site_media/media/'|
+MESSAGE_STORAGE 	|'django.contrib.messages.storage.session.SessionStorage'|
+MIDDLEWARE_CLASSES 	|['django.middleware.common.CommonMiddleware',
+'django.contrib.sessions.middleware.SessionMiddleware',
+'django.middleware.csrf.CsrfViewMiddleware',
+'django.contrib.auth.middleware.AuthenticationMiddleware',
+'django.contrib.messages.middleware.MessageMiddleware',
+'pinax.middleware.security.HideSensistiveFieldsMiddleware',
+'debug_toolbar.middleware.DebugToolbarMiddleware']|
+MONTH_DAY_FORMAT 	|'F j'|
+NUMBER_GROUPING 	|0|
+PASSWORD_RESET_TIMEOUT_DAYS 	|'********************'|
+PINAX_ROOT
+|'/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/pinax'|
+PINAX_THEME 	|'default'|
+PREPEND_WWW 	|False|
+PROFANITIES_LIST 	|'********************'|
+PROJECT_ROOT 	|'/Users/webdesk/Sites/djangolackeyorg/djangolackey'|
+ROOT_URLCONF 	|'djangolackey.urls'|
+SECRET_KEY 	|'********************'|
+SEND_BROKEN_LINK_EMAILS 	|False|
+SERVER_EMAIL 	|'root@localhost'|
+SERVE_MEDIA 	|True|
+SESSION_COOKIE_AGE 	|1209600|
+SESSION_COOKIE_DOMAIN 	|None|
+SESSION_COOKIE_NAME 	|'sessionid'|
+SESSION_COOKIE_PATH 	|'/'|
+SESSION_COOKIE_SECURE 	|False|
+SESSION_ENGINE 	|'django.contrib.sessions.backends.db'|
+SESSION_EXPIRE_AT_BROWSER_CLOSE 	|False|
+SESSION_FILE_PATH 	|None|
+SESSION_SAVE_EVERY_REQUEST 	|False|
+SETTINGS_MODULE 	|'djangolackey.settings'|
+SHORT_DATETIME_FORMAT 	|'m/d/Y P'|
+SHORT_DATE_FORMAT 	|'m/d/Y'|
+SITE_ID 	|1|
+STATICFILES_DIRS
+|['/Users/webdesk/Sites/djangolackeyorg/djangolackey/media',
+'/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/pinax/media/default',
+'/Users/webdesk/Sites/djangolackeyorg/djangolackey/site_media/media/static_images']|
+
+STATIC_ROOT
+|'/Users/webdesk/Sites/djangolackeyorg/djangolackey/site_media/static'|
+STATIC_URL 	|'/site_media/static/'|
+TEMPLATE_CONTEXT_PROCESSORS 	|['django.core.context_processors.auth',
+'django.core.context_processors.debug',
+'django.core.context_processors.i18n',
+'django.core.context_processors.media',
+'django.core.context_processors.request',
+'django.contrib.messages.context_processors.messages',
+'staticfiles.context_processors.static_url',
+'pinax.core.context_processors.pinax_settings']|
+TEMPLATE_DEBUG 	|True|
+TEMPLATE_DIRS
+|['/Users/webdesk/Sites/djangolackeyorg/djangolackey/templates']|
+TEMPLATE_LOADERS
+|['django.template.loaders.filesystem.load_template_source',
+'django.template.loaders.app_directories.load_template_source']|
+TEMPLATE_STRING_IF_INVALID 	|''|
+TEST_DATABASE_CHARSET 	|None|
+TEST_DATABASE_COLLATION 	|None|
+TEST_DATABASE_NAME 	|None|
+TEST_RUNNER 	|'django.test.simple.DjangoTestSuiteRunner'|
+THOUSAND_SEPARATOR 	|','|
+TIME_FORMAT 	|'P'|
+TIME_INPUT_FORMATS 	|('%H:%M:%S', '%H:%M')|
+TIME_ZONE 	|'US/Eastern'|
+TRANSACTIONS_MANAGED 	|False|
+TWITTER_PASSWORD 	|'********************'|
+TWITTER_TWEET_PREFIX 	|'New Post:'|
+TWITTER_USERNAME 	|'djangolackey'|
+URL_VALIDATOR_USER_AGENT 	|'Django/1.2.1 (http://www.djangoproject.com)'|
+USE_ETAGS 	|False|
+USE_I18N 	|True|
+USE_L10N 	|False|
+USE_THOUSAND_SEPARATOR 	|False|
+YEAR_MONTH_FORMAT 	|'F Y'|
+
+Close
+
+
+      HTTP Headers
+
+Key 	Value
+HTTP_ACCEPT
+text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET 	ISO-8859-1,utf-8;q=0.7,*;q=0.7
+HTTP_USER_AGENT 	Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US;
+rv:1.9.2.15) Gecko/20110303 Firefox/3.6.15
+HTTP_CONNECTION 	keep-alive
+SERVER_NAME 	localhost
+HTTP_REFERER 	http://127.0.0.1:8000/admin/biblion/post/
+REMOTE_ADDR 	127.0.0.1
+SERVER_SOFTWARE 	WSGIServer/0.1 Python/2.6.1
+SERVER_PORT 	8000
+HTTP_ACCEPT_LANGUAGE 	en-us,en;q=0.5
+SCRIPT_NAME 	
+REQUEST_METHOD 	GET
+HTTP_HOST 	127.0.0.1:8000
+HTTP_KEEP_ALIVE 	115
+CONTENT_TYPE 	text/plain
+SERVER_PROTOCOL 	HTTP/1.1
+QUERY_STRING 	
+REMOTE_HOST 	
+HTTP_ACCEPT_ENCODING 	gzip,deflate
+
+Close
+
+
+      Request Vars
+
+
+        View information
+
+View Function 	args 	kwargs
+django.contrib.admin.options.change_view 	(u'2',) 	None
+
+
+        COOKIES Variables
+
+Variable 	Value
+csrftoken 	9a532cb611950eaaf06f64a0a0b463c1
+djdt 	hide
+sessionid 	9177454b82bd87f8ab0ac2a81880a0df
+
+
+        SESSION Variables
+
+Variable 	Value
+_auth_user_id 	1
+_auth_user_backend 	django.contrib.auth.backends.ModelBackend
+
+
+        GET Variables
+
+No GET data
+
+
+        POST Variables
+
+No POST data
+
+Close
+
+
+      SQL Queries
+
+Time (ms) 	Action 	Stacktrace 	Query
+1.54 	SELECT
+</__debug__/sql_select/?sql=SELECT%20%22django_session%22.%22session_key%22%2C%20%22django_session%22.%22session_data%22%2C%20%22django_session%22.%22expire_date%22%20FROM%20%22django_session%22%20WHERE%20%28%22django_session%22.%22session_key%22%20%3D%20%25s%20%20AND%20%22django_session%22.%22expire_date%22%20%3E%20%25s%20%29&params=%5B%229177454b82bd87f8ab0ac2a81880a0df%22%2C%20%222011-03-12%2004%3A18%3A39.425241%22%5D&duration=1.54&hash=dfacdab0b96b30b9d9fb8861411684745856a330>
+EXPLAIN
+</__debug__/sql_explain/?sql=SELECT%20%22django_session%22.%22session_key%22%2C%20%22django_session%22.%22session_data%22%2C%20%22django_session%22.%22expire_date%22%20FROM%20%22django_session%22%20WHERE%20%28%22django_session%22.%22session_key%22%20%3D%20%25s%20%20AND%20%22django_session%22.%22expire_date%22%20%3E%20%25s%20%29&params=%5B%229177454b82bd87f8ab0ac2a81880a0df%22%2C%20%222011-03-12%2004%3A18%3A39.425241%22%5D&duration=1.54&hash=dfacdab0b96b30b9d9fb8861411684745856a330>
+	
+Toggle Stacktrace <#>
+	
+*SELECT* "django_session"."session_key",
+"django_session"."session_data", "django_session"."expire_date" *FROM*
+"django_session" *WHERE* ("django_session"."session_key" =
+9177454b82bd87f8ab0ac2a81880a0df *AND* "django_session"."expire_date" >
+2011-03-12 04:18:39.425241 )
+Line 	Method 	File
+239 	|wrapper|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py|
+
+188 	|inner|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py|
+
+141 	|has_permission|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py|
+
+9 	|__get__|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/auth/middleware.py|
+
+97 	|get_user|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/auth/__init__.py|
+
+46 	|__getitem__|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/sessions/backends/base.py|
+
+172 	|_get_session|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/sessions/backends/base.py|
+
+20 	|load|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/sessions/backends/db.py|
+
+
+0.32 	SELECT
+</__debug__/sql_select/?sql=SELECT%20%22auth_user%22.%22id%22%2C%20%22auth_user%22.%22username%22%2C%20%22auth_user%22.%22first_name%22%2C%20%22auth_user%22.%22last_name%22%2C%20%22auth_user%22.%22email%22%2C%20%22auth_user%22.%22password%22%2C%20%22auth_user%22.%22is_staff%22%2C%20%22auth_user%22.%22is_active%22%2C%20%22auth_user%22.%22is_superuser%22%2C%20%22auth_user%22.%22last_login%22%2C%20%22auth_user%22.%22date_joined%22%20FROM%20%22auth_user%22%20WHERE%20%22auth_user%22.%22id%22%20%3D%20%25s%20&params=%5B1%5D&duration=0.32&hash=d6e43b5cb429f9ae1b7da7137c9fe4f18fc62cca>
+EXPLAIN
+</__debug__/sql_explain/?sql=SELECT%20%22auth_user%22.%22id%22%2C%20%22auth_user%22.%22username%22%2C%20%22auth_user%22.%22first_name%22%2C%20%22auth_user%22.%22last_name%22%2C%20%22auth_user%22.%22email%22%2C%20%22auth_user%22.%22password%22%2C%20%22auth_user%22.%22is_staff%22%2C%20%22auth_user%22.%22is_active%22%2C%20%22auth_user%22.%22is_superuser%22%2C%20%22auth_user%22.%22last_login%22%2C%20%22auth_user%22.%22date_joined%22%20FROM%20%22auth_user%22%20WHERE%20%22auth_user%22.%22id%22%20%3D%20%25s%20&params=%5B1%5D&duration=0.32&hash=d6e43b5cb429f9ae1b7da7137c9fe4f18fc62cca>
+	
+Toggle Stacktrace <#>
+	
+*SELECT* "auth_user"."id", "auth_user"."username",
+"auth_user"."first_name", "auth_user"."last_name", "auth_user"."email",
+"auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active",
+"auth_user"."is_superuser", "auth_user"."last_login",
+"auth_user"."date_joined" *FROM* "auth_user" *WHERE* "auth_user"."id" = 1
+Line 	Method 	File
+239 	|wrapper|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py|
+
+188 	|inner|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py|
+
+141 	|has_permission|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py|
+
+9 	|__get__|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/auth/middleware.py|
+
+100 	|get_user|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/auth/__init__.py|
+
+56 	|get_user|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/auth/backends.py|
+
+
+0.25 	SELECT
+</__debug__/sql_select/?sql=SELECT%20%22biblion_post%22.%22id%22%2C%20%22biblion_post%22.%22section%22%2C%20%22biblion_post%22.%22title%22%2C%20%22biblion_post%22.%22slug%22%2C%20%22biblion_post%22.%22author_id%22%2C%20%22biblion_post%22.%22teaser_html%22%2C%20%22biblion_post%22.%22content_html%22%2C%20%22biblion_post%22.%22tweet_text%22%2C%20%22biblion_post%22.%22created%22%2C%20%22biblion_post%22.%22updated%22%2C%20%22biblion_post%22.%22published%22%2C%20%22biblion_post%22.%22view_count%22%20FROM%20%22biblion_post%22%20WHERE%20%22biblion_post%22.%22id%22%20%3D%20%25s%20&params=%5B2%5D&duration=0.25&hash=a355750095c42063b3441767ff306af446dfa388>
+EXPLAIN
+</__debug__/sql_explain/?sql=SELECT%20%22biblion_post%22.%22id%22%2C%20%22biblion_post%22.%22section%22%2C%20%22biblion_post%22.%22title%22%2C%20%22biblion_post%22.%22slug%22%2C%20%22biblion_post%22.%22author_id%22%2C%20%22biblion_post%22.%22teaser_html%22%2C%20%22biblion_post%22.%22content_html%22%2C%20%22biblion_post%22.%22tweet_text%22%2C%20%22biblion_post%22.%22created%22%2C%20%22biblion_post%22.%22updated%22%2C%20%22biblion_post%22.%22published%22%2C%20%22biblion_post%22.%22view_count%22%20FROM%20%22biblion_post%22%20WHERE%20%22biblion_post%22.%22id%22%20%3D%20%25s%20&params=%5B2%5D&duration=0.25&hash=a355750095c42063b3441767ff306af446dfa388>
+	
+Toggle Stacktrace <#>
+	
+*SELECT* "biblion_post"."id", "biblion_post"."section",
+"biblion_post"."title", "biblion_post"."slug",
+"biblion_post"."author_id", "biblion_post"."teaser_html",
+"biblion_post"."content_html", "biblion_post"."tweet_text",
+"biblion_post"."created", "biblion_post"."updated",
+"biblion_post"."published", "biblion_post"."view_count" *FROM*
+"biblion_post" *WHERE* "biblion_post"."id" = 2
+Line 	Method 	File
+239 	|wrapper|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py|
+
+190 	|inner|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py|
+
+860 	|change_view|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py|
+
+386 	|get_object|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py|
+
+
+0.33 	SELECT
+</__debug__/sql_select/?sql=SELECT%20%22biblion_revision%22.%22id%22%2C%20%22biblion_revision%22.%22post_id%22%2C%20%22biblion_revision%22.%22title%22%2C%20%22biblion_revision%22.%22teaser%22%2C%20%22biblion_revision%22.%22content%22%2C%20%22biblion_revision%22.%22author_id%22%2C%20%22biblion_revision%22.%22updated%22%2C%20%22biblion_revision%22.%22published%22%2C%20%22biblion_revision%22.%22view_count%22%20FROM%20%22biblion_revision%22%20WHERE%20%22biblion_revision%22.%22post_id%22%20%3D%20%25s%20%20ORDER%20BY%20%22biblion_revision%22.%22updated%22%20DESC%20LIMIT%201&params=%5B2%5D&duration=0.33&hash=b6b32dc1cbc186a6eb879c63d75557fc94f797f8>
+EXPLAIN
+</__debug__/sql_explain/?sql=SELECT%20%22biblion_revision%22.%22id%22%2C%20%22biblion_revision%22.%22post_id%22%2C%20%22biblion_revision%22.%22title%22%2C%20%22biblion_revision%22.%22teaser%22%2C%20%22biblion_revision%22.%22content%22%2C%20%22biblion_revision%22.%22author_id%22%2C%20%22biblion_revision%22.%22updated%22%2C%20%22biblion_revision%22.%22published%22%2C%20%22biblion_revision%22.%22view_count%22%20FROM%20%22biblion_revision%22%20WHERE%20%22biblion_revision%22.%22post_id%22%20%3D%20%25s%20%20ORDER%20BY%20%22biblion_revision%22.%22updated%22%20DESC%20LIMIT%201&params=%5B2%5D&duration=0.33&hash=b6b32dc1cbc186a6eb879c63d75557fc94f797f8>
+	
+Toggle Stacktrace <#>
+	
+*SELECT* "biblion_revision"."id", "biblion_revision"."post_id",
+"biblion_revision"."title", "biblion_revision"."teaser",
+"biblion_revision"."content", "biblion_revision"."author_id",
+"biblion_revision"."updated", "biblion_revision"."published",
+"biblion_revision"."view_count" *FROM* "biblion_revision" *WHERE*
+"biblion_revision"."post_id" = 2 *ORDER* *BY*
+"biblion_revision"."updated" *DESC* *LIMIT* 1
+Line 	Method 	File
+239 	|wrapper|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py|
+
+190 	|inner|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py|
+
+905 	|change_view|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py|
+
+53 	|__init__|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/biblion/forms.py|
+
+81 	|latest|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/biblion/models.py|
+
+
+0.18 	SELECT
+</__debug__/sql_select/?sql=SELECT%20%22biblion_image%22.%22id%22%2C%20%22biblion_image%22.%22post_id%22%2C%20%22biblion_image%22.%22image_path%22%2C%20%22biblion_image%22.%22url%22%2C%20%22biblion_image%22.%22timestamp%22%20FROM%20%22biblion_image%22%20WHERE%20%22biblion_image%22.%22post_id%22%20%3D%20%25s%20%20ORDER%20BY%20%22biblion_image%22.%22id%22%20ASC&params=%5B2%5D&duration=0.18&hash=e71e5576251d6e7ceec07854284276b3796cd7a5>
+EXPLAIN
+</__debug__/sql_explain/?sql=SELECT%20%22biblion_image%22.%22id%22%2C%20%22biblion_image%22.%22post_id%22%2C%20%22biblion_image%22.%22image_path%22%2C%20%22biblion_image%22.%22url%22%2C%20%22biblion_image%22.%22timestamp%22%20FROM%20%22biblion_image%22%20WHERE%20%22biblion_image%22.%22post_id%22%20%3D%20%25s%20%20ORDER%20BY%20%22biblion_image%22.%22id%22%20ASC&params=%5B2%5D&duration=0.18&hash=e71e5576251d6e7ceec07854284276b3796cd7a5>
+	
+Toggle Stacktrace <#>
+	
+*SELECT* "biblion_image"."id", "biblion_image"."post_id",
+"biblion_image"."image_path", "biblion_image"."url",
+"biblion_image"."timestamp" *FROM* "biblion_image" *WHERE*
+"biblion_image"."post_id" = 2 *ORDER* *BY* "biblion_image"."id" *ASC*
+Line 	Method 	File
+239 	|wrapper|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py|
+
+190 	|inner|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py|
+
+913 	|change_view|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py|
+
+
+0.25 	SELECT
+</__debug__/sql_select/?sql=SELECT%20%22auth_user%22.%22id%22%2C%20%22auth_user%22.%22username%22%2C%20%22auth_user%22.%22first_name%22%2C%20%22auth_user%22.%22last_name%22%2C%20%22auth_user%22.%22email%22%2C%20%22auth_user%22.%22password%22%2C%20%22auth_user%22.%22is_staff%22%2C%20%22auth_user%22.%22is_active%22%2C%20%22auth_user%22.%22is_superuser%22%2C%20%22auth_user%22.%22last_login%22%2C%20%22auth_user%22.%22date_joined%22%20FROM%20%22auth_user%22&params=%5B%5D&duration=0.25&hash=64521d07d11c378efc1f6ef4ed85e64f8e3b6429>
+EXPLAIN
+</__debug__/sql_explain/?sql=SELECT%20%22auth_user%22.%22id%22%2C%20%22auth_user%22.%22username%22%2C%20%22auth_user%22.%22first_name%22%2C%20%22auth_user%22.%22last_name%22%2C%20%22auth_user%22.%22email%22%2C%20%22auth_user%22.%22password%22%2C%20%22auth_user%22.%22is_staff%22%2C%20%22auth_user%22.%22is_active%22%2C%20%22auth_user%22.%22is_superuser%22%2C%20%22auth_user%22.%22last_login%22%2C%20%22auth_user%22.%22date_joined%22%20FROM%20%22auth_user%22&params=%5B%5D&duration=0.25&hash=64521d07d11c378efc1f6ef4ed85e64f8e3b6429>
+	
+Toggle Stacktrace <#>
+	
+*SELECT* "auth_user"."id", "auth_user"."username",
+"auth_user"."first_name", "auth_user"."last_name", "auth_user"."email",
+"auth_user"."password", "auth_user"."is_staff", "auth_user"."is_active",
+"auth_user"."is_superuser", "auth_user"."last_login",
+"auth_user"."date_joined" *FROM* "auth_user"
+Line 	Method 	File
+239 	|wrapper|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py|
+
+190 	|inner|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py|
+
+943 	|change_view|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py|
+
+634 	|render_change_form|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py|
+
+238 	|render|
+|/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/widgets.py|
+
+
+15 	|{% if field.is_readonly %} |
+16 	|<p>{{ field.contents }}</p> |
+17 	|{% else %} |
+18 	|{{ field.field }} |
+19 	|{% endif %} |
+20 	|{% endif %} |
+21 	|{% if field.field.field.help_text %} |
+
+*/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/templates/admin/includes/fieldset.html*
+
+Close
+
+
+      Templates (3 rendered)
+
+
+        Template path
+
+   1. /Users/webdesk/Sites/djangolackeyorg/djangolackey/templates
+
+
+        Templates
+
+*admin/change_form.html
+</__debug__/template_source/?template=admin/change_form.html>*
+    /Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/templates/admin/change_form.html
+    ▶ Toggle Context
+    |{} {'csrf_token': <django.utils.functional.__proxy__ object at
+    0x1032cd410>} {'messages':
+    <django.contrib.messages.storage.session.SessionStorage object at
+    0x1032cdd50>, 'perms': <django.utils.functional.__proxy__ object at
+    0x1032c9350>, 'user': <django.utils.functional.SimpleLazyObject
+    object at 0x102ba2dd0>} {'debug': True, 'sql_queries':
+    '<<sql_queries>>'} {'LANGUAGES': '<<languages>>', 'LANGUAGE_BIDI':
+    False, 'LANGUAGE_CODE': 'en-us'} {'MEDIA_URL': '/site_media/media/'}
+    {'request': '<<request>>'} {'messages':
+    <django.contrib.messages.storage.session.SessionStorage object at
+    0x1032cdd50>} {'STATIC_URL': '/site_media/static/'} {'SITE_DOMAIN':
+    u'djangolackey.org', 'SITE_NAME': u'DjangoLackey.org'} {'add':
+    False, 'adminform': <django.contrib.admin.helpers.AdminForm object
+    at 0x1032727d0>, 'app_label': 'biblion', 'change': True,
+    'content_type_id': 9, 'errors': [], 'form_url': '',
+    'has_absolute_url': True, 'has_add_permission': True,
+    'has_change_permission': True, 'has_delete_permission': True,
+    'has_file_field': True, 'inline_admin_formsets':
+    [<django.contrib.admin.helpers.InlineAdminFormSet object at
+    0x1032e5610>], 'is_popup': False, 'media': '<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/core.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/admin/RelatedObjectLookups.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/jquery.min.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/jquery.init.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/actions.min.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/urlify.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/prepopulate.min.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/inlines.min.js"></script>',
+    'object_id': u'2', 'opts': <Options for Post>, 'ordered_objects':
+    [], 'original': <Post: CSV>, 'root_path': None, 'save_as': False,
+    'save_on_top': False, 'title': u'Change post'} {'block': <Block
+    Node: content. Contents: [<Text Node: '<div id="content-main"> '>,
+    <Block Node: object-tools. Contents: [<Text Node: ' '>, <If node>,
+    <Text Node: ' '>]>, <Text Node: ' <form '>, <If node>, <Text Node:
+    'action="'>, <Variable Node: form_url>, <Text Node: '" method="post"
+    id="'>, <Variable Node: opts.module_name>, <Text Node: '_form">'>,
+    <django.template.defaulttags.CsrfTokenNode object at 0x103264dd0>,
+    <Block Node: form_top. Contents: []>, <Text Node: ' <div> '>, <If
+    node>, <Text Node: ' '>, <If node>, <Text Node: ' '>, <If node>,
+    <Text Node: ' '>, <For Node: for fieldset in adminform, tail_len:
+    3>, <Text Node: ' '>, <Block Node: after_field_sets. Contents: []>,
+    <Text Node: ' '>, <For Node: for inline_admin_formset in
+    inline_admin_formsets, tail_len: 3>, <Text Node: ' '>, <Block Node:
+    after_related_objects. Contents: []>, <Text Node: ' '>,
+    <django.template.InclusionNode object at 0x103267950>, <Text Node: '
+    '>, <If node>, <Text Node: ' '>, <Text Node: ' '>,
+    <django.template.InclusionNode object at 0x103267c10>, <Text Node: '
+    </div> </form></div> '>]>}|
+*admin/includes/fieldset.html
+</__debug__/template_source/?template=admin/includes/fieldset.html>*
+    /Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/templates/admin/includes/fieldset.html
+    ▶ Toggle Context
+    |{} {'csrf_token': <django.utils.functional.__proxy__ object at
+    0x1032cd410>} {'messages':
+    <django.contrib.messages.storage.session.SessionStorage object at
+    0x1032cdd50>, 'perms': <django.utils.functional.__proxy__ object at
+    0x1032c9350>, 'user': <django.utils.functional.SimpleLazyObject
+    object at 0x102ba2dd0>} {'debug': True, 'sql_queries':
+    '<<sql_queries>>'} {'LANGUAGES': '<<languages>>', 'LANGUAGE_BIDI':
+    False, 'LANGUAGE_CODE': 'en-us'} {'MEDIA_URL': '/site_media/media/'}
+    {'request': '<<request>>'} {'messages':
+    <django.contrib.messages.storage.session.SessionStorage object at
+    0x1032cdd50>} {'STATIC_URL': '/site_media/static/'} {'SITE_DOMAIN':
+    u'djangolackey.org', 'SITE_NAME': u'DjangoLackey.org'} {'add':
+    False, 'adminform': <django.contrib.admin.helpers.AdminForm object
+    at 0x1032727d0>, 'app_label': 'biblion', 'change': True,
+    'content_type_id': 9, 'errors': [], 'form_url': '',
+    'has_absolute_url': True, 'has_add_permission': True,
+    'has_change_permission': True, 'has_delete_permission': True,
+    'has_file_field': True, 'inline_admin_formsets':
+    [<django.contrib.admin.helpers.InlineAdminFormSet object at
+    0x1032e5610>], 'is_popup': False, 'media': '<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/core.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/admin/RelatedObjectLookups.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/jquery.min.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/jquery.init.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/actions.min.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/urlify.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/prepopulate.min.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/inlines.min.js"></script>',
+    'object_id': u'2', 'opts': <Options for Post>, 'ordered_objects':
+    [], 'original': <Post: CSV>, 'root_path': None, 'save_as': False,
+    'save_on_top': False, 'title': u'Change post'} {'block': <Block
+    Node: content. Contents: [<Text Node: '<div id="content-main"> '>,
+    <Block Node: object-tools. Contents: [<Text Node: ' '>, <If node>,
+    <Text Node: ' '>]>, <Text Node: ' <form '>, <If node>, <Text Node:
+    'action="'>, <Variable Node: form_url>, <Text Node: '" method="post"
+    id="'>, <Variable Node: opts.module_name>, <Text Node: '_form">'>,
+    <django.template.defaulttags.CsrfTokenNode object at 0x103264dd0>,
+    <Block Node: form_top. Contents: []>, <Text Node: ' <div> '>, <If
+    node>, <Text Node: ' '>, <If node>, <Text Node: ' '>, <If node>,
+    <Text Node: ' '>, <For Node: for fieldset in adminform, tail_len:
+    3>, <Text Node: ' '>, <Block Node: after_field_sets. Contents: []>,
+    <Text Node: ' '>, <For Node: for inline_admin_formset in
+    inline_admin_formsets, tail_len: 3>, <Text Node: ' '>, <Block Node:
+    after_related_objects. Contents: []>, <Text Node: ' '>,
+    <django.template.InclusionNode object at 0x103267950>, <Text Node: '
+    '>, <If node>, <Text Node: ' '>, <Text Node: ' '>,
+    <django.template.InclusionNode object at 0x103267c10>, <Text Node: '
+    </div> </form></div> '>]>}|
+*admin/edit_inline/tabular.html
+</__debug__/template_source/?template=admin/edit_inline/tabular.html>*
+    /Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/templates/admin/edit_inline/tabular.html
+    ▶ Toggle Context
+    |{} {'csrf_token': <django.utils.functional.__proxy__ object at
+    0x1032cd410>} {'messages':
+    <django.contrib.messages.storage.session.SessionStorage object at
+    0x1032cdd50>, 'perms': <django.utils.functional.__proxy__ object at
+    0x1032c9350>, 'user': <django.utils.functional.SimpleLazyObject
+    object at 0x102ba2dd0>} {'debug': True, 'sql_queries':
+    '<<sql_queries>>'} {'LANGUAGES': '<<languages>>', 'LANGUAGE_BIDI':
+    False, 'LANGUAGE_CODE': 'en-us'} {'MEDIA_URL': '/site_media/media/'}
+    {'request': '<<request>>'} {'messages':
+    <django.contrib.messages.storage.session.SessionStorage object at
+    0x1032cdd50>} {'STATIC_URL': '/site_media/static/'} {'SITE_DOMAIN':
+    u'djangolackey.org', 'SITE_NAME': u'DjangoLackey.org'} {'add':
+    False, 'adminform': <django.contrib.admin.helpers.AdminForm object
+    at 0x1032727d0>, 'app_label': 'biblion', 'change': True,
+    'content_type_id': 9, 'errors': [], 'form_url': '',
+    'has_absolute_url': True, 'has_add_permission': True,
+    'has_change_permission': True, 'has_delete_permission': True,
+    'has_file_field': True, 'inline_admin_formsets':
+    [<django.contrib.admin.helpers.InlineAdminFormSet object at
+    0x1032e5610>], 'is_popup': False, 'media': '<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/core.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/admin/RelatedObjectLookups.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/jquery.min.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/jquery.init.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/actions.min.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/urlify.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/prepopulate.min.js"></script>\n<script
+    type="text/javascript"
+    src="/site_media/static/admin/js/inlines.min.js"></script>',
+    'object_id': u'2', 'opts': <Options for Post>, 'ordered_objects':
+    [], 'original': <Post: CSV>, 'root_path': None, 'save_as': False,
+    'save_on_top': False, 'title': u'Change post'} {'block': <Block
+    Node: content. Contents: [<Text Node: '<div id="content-main"> '>,
+    <Block Node: object-tools. Contents: [<Text Node: ' '>, <If node>,
+    <Text Node: ' '>]>, <Text Node: ' <form '>, <If node>, <Text Node:
+    'action="'>, <Variable Node: form_url>, <Text Node: '" method="post"
+    id="'>, <Variable Node: opts.module_name>, <Text Node: '_form">'>,
+    <django.template.defaulttags.CsrfTokenNode object at 0x103264dd0>,
+    <Block Node: form_top. Contents: []>, <Text Node: ' <div> '>, <If
+    node>, <Text Node: ' '>, <If node>, <Text Node: ' '>, <If node>,
+    <Text Node: ' '>, <For Node: for fieldset in adminform, tail_len:
+    3>, <Text Node: ' '>, <Block Node: after_field_sets. Contents: []>,
+    <Text Node: ' '>, <For Node: for inline_admin_formset in
+    inline_admin_formsets, tail_len: 3>, <Text Node: ' '>, <Block Node:
+    after_related_objects. Contents: []>, <Text Node: ' '>,
+    <django.template.InclusionNode object at 0x103267950>, <Text Node: '
+    '>, <If node>, <Text Node: ' '>, <Text Node: ' '>,
+    <django.template.InclusionNode object at 0x103267c10>, <Text Node: '
+    </div> </form></div> '>]>}|
+
+
+        Context processors
+
+*django.core.context_processors.i18n*
+    ▶ Toggle Context
+    |{'LANGUAGES': (('ar', 'Arabic'), ('bg', 'Bulgarian'), ('bn',
+    'Bengali'), ('bs', 'Bosnian'), ('ca', 'Catalan'), ('cs', 'Czech'),
+    ('cy', 'Welsh'), ('da', 'Danish'), ('de', 'German'), ('el',
+    'Greek'), ('en', 'English'), ('en-gb', 'British English'), ('es',
+    'Spanish'), ('es-ar', 'Argentinean Spanish'), ('et', 'Estonian'),
+    ('eu', 'Basque'), ('fa', 'Persian'), ('fi', 'Finnish'), ('fr',
+    'French'), ('fy-nl', 'Frisian'), ('ga', 'Irish'), ('gl',
+    'Galician'), ('he', 'Hebrew'), ('hi', 'Hindi'), ('hr', 'Croatian'),
+    ('hu', 'Hungarian'), ('id', 'Indonesian'), ('is', 'Icelandic'),
+    ('it', 'Italian'), ('ja', 'Japanese'), ('ka', 'Georgian'), ('km',
+    'Khmer'), ('kn', 'Kannada'), ('ko', 'Korean'), ('lt', 'Lithuanian'),
+    ('lv', 'Latvian'), ('mk', 'Macedonian'), ('mn', 'Mongolian'), ('nl',
+    'Dutch'), ('no', 'Norwegian'), ('nb', 'Norwegian Bokmal'), ('nn',
+    'Norwegian Nynorsk'), ('pl', 'Polish'), ('pt', 'Portuguese'),
+    ('pt-br', 'Brazilian Portuguese'), ('ro', 'Romanian'), ('ru',
+    'Russian'), ('sk', 'Slovak'), ('sl', 'Slovenian'), ('sq',
+    'Albanian'), ('sr', 'Serbian'), ('sr-latn', 'Serbian Latin'), ('sv',
+    'Swedish'), ('ta', 'Tamil'), ('te', 'Telugu'), ('th', 'Thai'),
+    ('tr', 'Turkish'), ('uk', 'Ukrainian'), ('vi', 'Vietnamese'),
+    ('zh-cn', 'Simplified Chinese'), ('zh-tw', 'Traditional Chinese')),
+    'LANGUAGE_BIDI': False, 'LANGUAGE_CODE': 'en-us'}|
+*django.core.context_processors.media*
+    ▶ Toggle Context
+    |{'MEDIA_URL': '/site_media/media/'}|
+*django.contrib.messages.context_processors.messages*
+    ▶ Toggle Context
+    |{'messages':
+    <django.contrib.messages.storage.session.SessionStorage object at
+    0x1032cdd50>}|
+*pinax.core.context_processors.pinax_settings*
+    ▶ Toggle Context
+    |{'SITE_DOMAIN': u'djangolackey.org', 'SITE_NAME': u'DjangoLackey.org'}|
+*django.core.context_processors.request*
+    ▶ Toggle Context
+    |{'request': <WSGIRequest GET:<QueryDict: {}>, POST:<QueryDict: {}>,
+    COOKIES:{'csrftoken': '9a532cb611950eaaf06f64a0a0b463c1', 'djdt':
+    'hide', 'sessionid': '9177454b82bd87f8ab0ac2a81880a0df'},
+    META:{'Apple_PubSub_Socket_Render': '/tmp/launch-lmWge5/Render',
+    'COMMAND_MODE': 'unix2003', 'CONTENT_LENGTH': '', 'CONTENT_TYPE':
+    'text/plain', 'CSRF_COOKIE': '9a532cb611950eaaf06f64a0a0b463c1',
+    'CSRF_COOKIE_USED': True, 'DISPLAY': '/tmp/launch-oAWYNU/org.x:0',
+    'DJANGO_SETTINGS_MODULE': 'djangolackey.settings', 'DUKE_USER':
+    'jlindsey', 'ELLA_USER': 'jlindsey', 'GATEWAY_INTERFACE': 'CGI/1.1',
+    'HOME': '/Users/webdesk', 'HTTP_ACCEPT':
+    'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_CHARSET': 'ISO-8859-1,utf-8;q=0.7,*;q=0.7',
+    'HTTP_ACCEPT_ENCODING': 'gzip,deflate', 'HTTP_ACCEPT_LANGUAGE':
+    'en-us,en;q=0.5', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_COOKIE':
+    'djdt=hide; csrftoken=9a532cb611950eaaf06f64a0a0b463c1;
+    sessionid=9177454b82bd87f8ab0ac2a81880a0df', 'HTTP_HOST':
+    '127.0.0.1:8000', 'HTTP_IF_NONE_MATCH':
+    '"1607d2385db7a8194ed91af87d83f834"', 'HTTP_KEEP_ALIVE': '115',
+    'HTTP_REFERER': 'http://127.0.0.1:8000/admin/biblion/post/',
+    'HTTP_USER_AGENT': 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6;
+    en-US; rv:1.9.2.15) Gecko/20110303 Firefox/3.6.15', 'LANG':
+    'en_US.UTF-8', 'LOGNAME': 'webdesk', 'MANPATH':
+    '/opt/local/share/man:', 'OLDPWD':
+    '/Users/webdesk/Sites/djangolackeyorg', 'PATH':
+    '/Users/webdesk/Sites/djangolackeyorg/bin:/opt/local/bin:/opt/local/sbin:/opt/subversion/:/Users/webdesk/bin:/usr/local/bin:/bin:/usr/bin:/usr/sbin:/sbin/',
+    'PATH_INFO': u'/admin/biblion/post/2/', 'PS1':
+    '(djangolackeyorg)\\h:\\W \\u\\$ ', 'PWD':
+    '/Users/webdesk/Sites/djangolackeyorg/djangolackey', 'QUERY_STRING':
+    '', 'REMOTE_ADDR': '127.0.0.1', 'REMOTE_HOST': '', 'REQUEST_METHOD':
+    'GET', 'RUN_MAIN': 'true', 'SCRIPT_NAME': u'', 'SERVER_NAME':
+    'localhost', 'SERVER_PORT': '8000', 'SERVER_PROTOCOL': 'HTTP/1.1',
+    'SERVER_SOFTWARE': 'WSGIServer/0.1 Python/2.6.1', 'SHELL':
+    '/bin/bash', 'SHLVL': '1', 'SLIM_USER': 'jlindsey', 'SSH_AUTH_SOCK':
+    '/tmp/launch-L7gNlB/Listeners', 'TERM': 'xterm-color',
+    'TERM_PROGRAM': 'Apple_Terminal', 'TERM_PROGRAM_VERSION': '273',
+    'TMPDIR': '/var/folders/CX/CXdKfHXNEsSDhj6REuw-JU+++TU/-Tmp-/',
+    'TZ': 'US/Eastern', 'USER': 'webdesk',
+    'VERSIONER_PYTHON_PREFER_32_BIT': 'no', 'VERSIONER_PYTHON_VERSION':
+    '2.6', 'VIRTUAL_ENV': '/Users/webdesk/Sites/djangolackeyorg', '_':
+    '/Users/webdesk/Sites/djangolackeyorg/bin/python',
+    '__CF_USER_TEXT_ENCODING': '0x1F8:0:0', 'wsgi.errors': <open file
+    '<stderr>', mode 'w' at 0x100416140>, 'wsgi.file_wrapper': <class
+    'django.core.servers.basehttp.FileWrapper'>, 'wsgi.input':
+    <socket._fileobject object at 0x1032cab18>, 'wsgi.multiprocess':
+    False, 'wsgi.multithread': True, 'wsgi.run_once': False,
+    'wsgi.url_scheme': 'http', 'wsgi.version': (1, 0)}>}|
+*django.core.context_processors.csrf*
+    ▶ Toggle Context
+    |{'csrf_token': <django.utils.functional.__proxy__ object at
+    0x1031d7d90>}|
+*django.core.context_processors.debug*
+    ▶ Toggle Context
+    |{'debug': True, 'sql_queries': [{'duration': 1.5409999999999999,
+    'hash': 'dfacdab0b96b30b9d9fb8861411684745856a330', 'is_select':
+    True, 'is_slow': False, 'params':
+    '["9177454b82bd87f8ab0ac2a81880a0df", "2011-03-12
+    04:18:39.425241"]', 'raw_sql': 'SELECT
+    "django_session"."session_key", "django_session"."session_data",
+    "django_session"."expire_date" FROM "django_session" WHERE
+    ("django_session"."session_key" = %s AND
+    "django_session"."expire_date" > %s )', 'sql':
+    u'<strong>SELECT</strong>
+    &quot;django_session&quot;.&quot;session_key&quot;,
+    &quot;django_session&quot;.&quot;session_data&quot;,
+    &quot;django_session&quot;.&quot;expire_date&quot;
+    <strong>FROM</strong> &quot;django_session&quot;
+    <strong>WHERE</strong>
+    (&quot;django_session&quot;.&quot;session_key&quot; =
+    9177454b82bd87f8ab0ac2a81880a0df <strong>AND</strong>
+    &quot;django_session&quot;.&quot;expire_date&quot; &gt; 2011-03-12
+    04:18:39.425241 )', 'stacktrace':
+    [('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py',
+    239, 'wrapper', 'return self.admin_site.admin_view(view)(*args,
+    **kwargs)'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py',
+    188, 'inner', 'if not self.has_permission(request):'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py',
+    141, 'has_permission', 'return request.user.is_active and
+    request.user.is_staff'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/auth/middleware.py',
+    9, '__get__', 'request._cached_user = get_user(request)'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/auth/__init__.py',
+    97, 'get_user', 'user_id = request.session[SESSION_KEY]'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/sessions/backends/base.py',
+    46, '__getitem__', 'return self._session[key]'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/sessions/backends/base.py',
+    172, '_get_session', 'self._session_cache = self.load()'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/sessions/backends/db.py',
+    20, 'load', 'expire_date__gt=datetime.datetime.now()')],
+    'start_offset': 0, 'start_time': datetime.datetime(2011, 3, 12, 4,
+    18, 39, 426767), 'stop_time': datetime.datetime(2011, 3, 12, 4, 18,
+    39, 428308), 'template_info': None, 'width_ratio':
+    53.956582633053216}, {'duration': 0.315, 'hash':
+    'd6e43b5cb429f9ae1b7da7137c9fe4f18fc62cca', 'is_select': True,
+    'is_slow': False, 'params': '[1]', 'raw_sql': 'SELECT
+    "auth_user"."id", "auth_user"."username", "auth_user"."first_name",
+    "auth_user"."last_name", "auth_user"."email",
+    "auth_user"."password", "auth_user"."is_staff",
+    "auth_user"."is_active", "auth_user"."is_superuser",
+    "auth_user"."last_login", "auth_user"."date_joined" FROM "auth_user"
+    WHERE "auth_user"."id" = %s ', 'sql': u'<strong>SELECT</strong>
+    &quot;auth_user&quot;.&quot;id&quot;,
+    &quot;auth_user&quot;.&quot;username&quot;,
+    &quot;auth_user&quot;.&quot;first_name&quot;,
+    &quot;auth_user&quot;.&quot;last_name&quot;,
+    &quot;auth_user&quot;.&quot;email&quot;,
+    &quot;auth_user&quot;.&quot;password&quot;,
+    &quot;auth_user&quot;.&quot;is_staff&quot;,
+    &quot;auth_user&quot;.&quot;is_active&quot;,
+    &quot;auth_user&quot;.&quot;is_superuser&quot;,
+    &quot;auth_user&quot;.&quot;last_login&quot;,
+    &quot;auth_user&quot;.&quot;date_joined&quot; <strong>FROM</strong>
+    &quot;auth_user&quot; <strong>WHERE</strong>
+    &quot;auth_user&quot;.&quot;id&quot; = 1', 'stacktrace':
+    [('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py',
+    239, 'wrapper', 'return self.admin_site.admin_view(view)(*args,
+    **kwargs)'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py',
+    188, 'inner', 'if not self.has_permission(request):'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py',
+    141, 'has_permission', 'return request.user.is_active and
+    request.user.is_staff'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/auth/middleware.py',
+    9, '__get__', 'request._cached_user = get_user(request)'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/auth/__init__.py',
+    100, 'get_user', 'user = backend.get_user(user_id) or
+    AnonymousUser()'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/auth/backends.py',
+    56, 'get_user', 'return User.objects.get(pk=user_id)')],
+    'start_offset': 53.956582633053216, 'start_time':
+    datetime.datetime(2011, 3, 12, 4, 18, 39, 436039), 'stop_time':
+    datetime.datetime(2011, 3, 12, 4, 18, 39, 436354), 'template_info':
+    None, 'width_ratio': 11.029411764705884}, {'duration': 0.249,
+    'hash': 'a355750095c42063b3441767ff306af446dfa388', 'is_select':
+    True, 'is_slow': False, 'params': '[2]', 'raw_sql': 'SELECT
+    "biblion_post"."id", "biblion_post"."section",
+    "biblion_post"."title", "biblion_post"."slug",
+    "biblion_post"."author_id", "biblion_post"."teaser_html",
+    "biblion_post"."content_html", "biblion_post"."tweet_text",
+    "biblion_post"."created", "biblion_post"."updated",
+    "biblion_post"."published", "biblion_post"."view_count" FROM
+    "biblion_post" WHERE "biblion_post"."id" = %s ', 'sql':
+    u'<strong>SELECT</strong> &quot;biblion_post&quot;.&quot;id&quot;,
+    &quot;biblion_post&quot;.&quot;section&quot;,
+    &quot;biblion_post&quot;.&quot;title&quot;,
+    &quot;biblion_post&quot;.&quot;slug&quot;,
+    &quot;biblion_post&quot;.&quot;author_id&quot;,
+    &quot;biblion_post&quot;.&quot;teaser_html&quot;,
+    &quot;biblion_post&quot;.&quot;content_html&quot;,
+    &quot;biblion_post&quot;.&quot;tweet_text&quot;,
+    &quot;biblion_post&quot;.&quot;created&quot;,
+    &quot;biblion_post&quot;.&quot;updated&quot;,
+    &quot;biblion_post&quot;.&quot;published&quot;,
+    &quot;biblion_post&quot;.&quot;view_count&quot;
+    <strong>FROM</strong> &quot;biblion_post&quot;
+    <strong>WHERE</strong> &quot;biblion_post&quot;.&quot;id&quot; = 2',
+    'stacktrace':
+    [('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py',
+    239, 'wrapper', 'return self.admin_site.admin_view(view)(*args,
+    **kwargs)'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py',
+    190, 'inner', 'return view(request, *args, **kwargs)'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py',
+    860, 'change_view', 'obj = self.get_object(request,
+    unquote(object_id))'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py',
+    386, 'get_object', 'return queryset.get(pk=object_id)')],
+    'start_offset': 64.9859943977591, 'start_time':
+    datetime.datetime(2011, 3, 12, 4, 18, 39, 442784), 'stop_time':
+    datetime.datetime(2011, 3, 12, 4, 18, 39, 443033), 'template_info':
+    None, 'width_ratio': 8.7184873949579842}, {'duration':
+    0.33000000000000002, 'hash':
+    'b6b32dc1cbc186a6eb879c63d75557fc94f797f8', 'is_select': True,
+    'is_slow': False, 'params': '[2]', 'raw_sql': 'SELECT
+    "biblion_revision"."id", "biblion_revision"."post_id",
+    "biblion_revision"."title", "biblion_revision"."teaser",
+    "biblion_revision"."content", "biblion_revision"."author_id",
+    "biblion_revision"."updated", "biblion_revision"."published",
+    "biblion_revision"."view_count" FROM "biblion_revision" WHERE
+    "biblion_revision"."post_id" = %s ORDER BY
+    "biblion_revision"."updated" DESC LIMIT 1', 'sql':
+    u'<strong>SELECT</strong>
+    &quot;biblion_revision&quot;.&quot;id&quot;,
+    &quot;biblion_revision&quot;.&quot;post_id&quot;,
+    &quot;biblion_revision&quot;.&quot;title&quot;,
+    &quot;biblion_revision&quot;.&quot;teaser&quot;,
+    &quot;biblion_revision&quot;.&quot;content&quot;,
+    &quot;biblion_revision&quot;.&quot;author_id&quot;,
+    &quot;biblion_revision&quot;.&quot;updated&quot;,
+    &quot;biblion_revision&quot;.&quot;published&quot;,
+    &quot;biblion_revision&quot;.&quot;view_count&quot;
+    <strong>FROM</strong> &quot;biblion_revision&quot;
+    <strong>WHERE</strong>
+    &quot;biblion_revision&quot;.&quot;post_id&quot; = 2
+    <strong>ORDER</strong> <strong>BY</strong>
+    &quot;biblion_revision&quot;.&quot;updated&quot;
+    <strong>DESC</strong> <strong>LIMIT</strong> 1', 'stacktrace':
+    [('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py',
+    239, 'wrapper', 'return self.admin_site.admin_view(view)(*args,
+    **kwargs)'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py',
+    190, 'inner', 'return view(request, *args, **kwargs)'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py',
+    905, 'change_view', 'form = ModelForm(instance=obj)'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/biblion/forms.py',
+    53, '__init__', 'latest_revision = post.latest()'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/biblion/models.py',
+    81, 'latest', 'return self.revisions.order_by("-updated")[0]')],
+    'start_offset': 73.70448179271709, 'start_time':
+    datetime.datetime(2011, 3, 12, 4, 18, 39, 451386), 'stop_time':
+    datetime.datetime(2011, 3, 12, 4, 18, 39, 451716), 'template_info':
+    None, 'width_ratio': 11.554621848739496}, {'duration':
+    0.17499999999999999, 'hash':
+    'e71e5576251d6e7ceec07854284276b3796cd7a5', 'is_select': True,
+    'is_slow': False, 'params': '[2]', 'raw_sql': 'SELECT
+    "biblion_image"."id", "biblion_image"."post_id",
+    "biblion_image"."image_path", "biblion_image"."url",
+    "biblion_image"."timestamp" FROM "biblion_image" WHERE
+    "biblion_image"."post_id" = %s ORDER BY "biblion_image"."id" ASC',
+    'sql': u'<strong>SELECT</strong>
+    &quot;biblion_image&quot;.&quot;id&quot;,
+    &quot;biblion_image&quot;.&quot;post_id&quot;,
+    &quot;biblion_image&quot;.&quot;image_path&quot;,
+    &quot;biblion_image&quot;.&quot;url&quot;,
+    &quot;biblion_image&quot;.&quot;timestamp&quot;
+    <strong>FROM</strong> &quot;biblion_image&quot;
+    <strong>WHERE</strong> &quot;biblion_image&quot;.&quot;post_id&quot;
+    = 2 <strong>ORDER</strong> <strong>BY</strong>
+    &quot;biblion_image&quot;.&quot;id&quot; <strong>ASC</strong>',
+    'stacktrace':
+    [('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py',
+    239, 'wrapper', 'return self.admin_site.admin_view(view)(*args,
+    **kwargs)'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py',
+    190, 'inner', 'return view(request, *args, **kwargs)'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py',
+    913, 'change_view', 'queryset=inline.queryset(request))')],
+    'start_offset': 85.259103641456591, 'start_time':
+    datetime.datetime(2011, 3, 12, 4, 18, 39, 458977), 'stop_time':
+    datetime.datetime(2011, 3, 12, 4, 18, 39, 459152), 'template_info':
+    None, 'width_ratio': 6.1274509803921564}, {'duration': 0.246,
+    'hash': '64521d07d11c378efc1f6ef4ed85e64f8e3b6429', 'is_select':
+    True, 'is_slow': False, 'params': '[]', 'raw_sql': 'SELECT
+    "auth_user"."id", "auth_user"."username", "auth_user"."first_name",
+    "auth_user"."last_name", "auth_user"."email",
+    "auth_user"."password", "auth_user"."is_staff",
+    "auth_user"."is_active", "auth_user"."is_superuser",
+    "auth_user"."last_login", "auth_user"."date_joined" FROM
+    "auth_user"', 'sql': u'<strong>SELECT</strong>
+    &quot;auth_user&quot;.&quot;id&quot;,
+    &quot;auth_user&quot;.&quot;username&quot;,
+    &quot;auth_user&quot;.&quot;first_name&quot;,
+    &quot;auth_user&quot;.&quot;last_name&quot;,
+    &quot;auth_user&quot;.&quot;email&quot;,
+    &quot;auth_user&quot;.&quot;password&quot;,
+    &quot;auth_user&quot;.&quot;is_staff&quot;,
+    &quot;auth_user&quot;.&quot;is_active&quot;,
+    &quot;auth_user&quot;.&quot;is_superuser&quot;,
+    &quot;auth_user&quot;.&quot;last_login&quot;,
+    &quot;auth_user&quot;.&quot;date_joined&quot; <strong>FROM</strong>
+    &quot;auth_user&quot;', 'stacktrace':
+    [('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py',
+    239, 'wrapper', 'return self.admin_site.admin_view(view)(*args,
+    **kwargs)'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/sites.py',
+    190, 'inner', 'return view(request, *args, **kwargs)'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py',
+    943, 'change_view', 'return self.render_change_form(request,
+    context, change=True, obj=obj)'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/options.py',
+    634, 'render_change_form', '], context,
+    context_instance=context_instance)'),
+    ('/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/widgets.py',
+    238, 'render', 'output = [self.widget.render(name, value, *args,
+    **kwargs)]')], 'start_offset': 91.386554621848745, 'start_time':
+    datetime.datetime(2011, 3, 12, 4, 18, 39, 494403), 'stop_time':
+    datetime.datetime(2011, 3, 12, 4, 18, 39, 494649), 'template_info':
+    {'context': [{'content': u' {% if field.is_readonly %}\n',
+    'highlight': False, 'num': 15}, {'content': u' <p>{{ field.contents
+    }}</p>\n', 'highlight': False, 'num': 16}, {'content': u' {% else
+    %}\n', 'highlight': False, 'num': 17}, {'content': u' {{ field.field
+    }}\n', 'highlight': True, 'num': 18}, {'content': u' {% endif %}\n',
+    'highlight': False, 'num': 19}, {'content': u' {% endif %}\n',
+    'highlight': False, 'num': 20}, {'content': u' {% if
+    field.field.field.help_text %}\n', 'highlight': False, 'num': 21}],
+    'name':
+    u'/Users/webdesk/Sites/djangolackeyorg/lib/python2.6/site-packages/django/contrib/admin/templates/admin/includes/fieldset.html'},
+    'width_ratio': 8.6134453781512601}]}|
+*staticfiles.context_processors.static_url*
+    ▶ Toggle Context
+    |{'STATIC_URL': '/site_media/static/'}|
+*django.core.context_processors.auth*
+    ▶ Toggle Context
+    |{'messages':
+    <django.contrib.messages.storage.session.SessionStorage object at
+    0x1032cdd50>, 'perms': <django.utils.functional.__proxy__ object at
+    0x1036abf90>, 'user': <django.utils.functional.SimpleLazyObject
+    object at 0x1031d7d90>}|
+
+Close
+
+
+      Signals
+
+Signal 	Providing Args 	Receivers
+class_prepared 	class 	function setup_join_cache, function
+ensure_default_manager, function do_pending_lookups
+connection_created 		
+got_request_exception 	request 	function _rollback_on_exception
+post_delete 	instance 	method delete_file on ImageField object
+post_init 	instance 	method update_dimension_fields on ImageField object
+post_save 	instance, created, raw 	
+post_syncdb 	app, verbosity, interactive, class, created_models 	
+pre_delete 	instance 	
+pre_init 	instance, args, kwargs 	
+pre_save 	instance, raw 	
+request_finished 		function close_connection
+request_started 		function reset_queries
+
+Close
+
+
+      Log Messages
+
+No messages logged.
+

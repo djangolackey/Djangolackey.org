@@ -1,0 +1,6 @@
+<p class="post_dateline">
+    <span class="date">{% if post.published %}{{ post.published|date }}{% else %}Not published yet{% endif %}</span>
+    <br />
+    by <span class="author">{{ post.author.username }}</span> in
+    <a href="{% url blog_section post.section_slug|lower %}"><span class="section">{{ post.get_section_display|capfirst }}</span></a>
+</p>
